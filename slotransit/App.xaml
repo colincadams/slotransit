@@ -1,0 +1,33 @@
+﻿<Application
+    x:Class="slobus_v1._0_db.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:cnvs="clr-namespace:slobus_v1._0_db.Converters"
+    xmlns:local="clr-namespace:slobus_v1._0_db">
+
+    <!--Application Resources-->
+    <Application.Resources>
+        <local:LocalizedStrings  x:Key="LocalizedStrings"/>
+        <cnvs:TimeConverter x:Key="timeConverter"/>
+        <cnvs:TimeUntilConverter x:Key="timeUntilConverter"/>
+        <cnvs:StopIDConverter x:Key="stopIdConverter"/>
+        <cnvs:RouteIDConverter x:Key="routeIdConverter"/>
+        <cnvs:RouteDescConverter x:Key="routeDescConverter"/>
+        <cnvs:NextRouteConverter x:Key="nextRouteConverter"/>
+        <cnvs:DistanceConverter x:Key="distanceConverter"/>
+        <cnvs:IndexConverter x:Key="indexConverter"/>
+        <cnvs:ArrivingOrDepartingConverter x:Key="arrivingOrDepartingConverter"/>
+        <cnvs:ArrivingVisibilityConverter x:Key="arrivingVisibilityConverter"/>
+        <cnvs:CapsConverter x:Key="capsConverter"/>
+    </Application.Resources>
+
+    <Application.ApplicationLifetimeObjects>
+        <!--Required object that handles lifetime events for the application-->
+        <shell:PhoneApplicationService
+            Launching="Application_Launching" Closing="Application_Closing"
+            Activated="Application_Activated" Deactivated="Application_Deactivated"/>
+    </Application.ApplicationLifetimeObjects>
+
+</Application>

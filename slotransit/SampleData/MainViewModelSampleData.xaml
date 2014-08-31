@@ -1,0 +1,35 @@
+﻿<vm:MainViewModel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:slobus_v1._0_db.ViewModels">
+
+    <vm:MainViewModel.Routes>
+        <vm:RouteViewModel RouteID="0" Name="design one" Desc="Maecenas praesent accumsan bibendum" NotRunningMessage="Maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur">
+            <vm:RouteViewModel.BusAStops>
+                <vm:RouteStopViewModel Time="6:54" StopID="Amtrak Station" RouteID="0" TimeUntil="0:18" />
+                <vm:RouteStopViewModel Time="7:02" StopID="Downtown Transit Center" RouteID="0" TimeUntil="0:26" />
+                <vm:RouteStopViewModel Time="7:30" StopID="0" RouteID="0" TimeUntil="0:54" />
+                <vm:RouteStopViewModel Time="7:42" StopID="1" RouteID="0" TimeUntil="1:06" />
+                <vm:RouteStopViewModel Time="12:22" StopID="0" RouteID="0" TimeUntil="5:46" />
+            </vm:RouteViewModel.BusAStops>
+        </vm:RouteViewModel>
+        <vm:RouteViewModel RouteID="1" Name="design two" Desc="Dictumst eleifend facilisi faucibus" NotRunningMessage="Pharetra placerat pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent"/>
+        <vm:RouteViewModel RouteID="2" Name="design three" Desc="Habitant inceptos interdum lobortis" NotRunningMessage="Accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat"/>
+        <vm:RouteViewModel RouteID="3" Name="design four" Desc="Nascetur pharetra placerat pulvinar" NotRunningMessage="Pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum"/>
+        <vm:RouteViewModel RouteID="4" Name="design five" Desc="Sagittis senectus sociosqu suscipit" NotRunningMessage="Dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat pulvinar sagittis"/>
+        <vm:RouteViewModel RouteID="5" Name="design six" Desc="Torquent ultrices vehicula volutpat" NotRunningMessage="Senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum dictumst eleifend"/>
+    </vm:MainViewModel.Routes>
+    <vm:MainViewModel.Stops>
+        <vm:StopViewModel StopID="0" Distance="4.2" Name="Amtrak Station">
+            <vm:StopViewModel.RouteStops>
+                <vm:RouteStopViewModel Time="6:54" StopID="0?Arrive" RouteID="route one" TimeUntil="0:18" />
+                <vm:RouteStopViewModel Time="7:02" StopID="0?Arrive" RouteID="route six a" TimeUntil="0:26" />
+                <vm:RouteStopViewModel Time="7:30" StopID="0" RouteID="route four" TimeUntil="0:54" />
+                <vm:RouteStopViewModel Time="7:42" StopID="0?Depart" RouteID="route six b" TimeUntil="1:06" />
+                <vm:RouteStopViewModel Time="12:22" StopID="0" RouteID="route five" TimeUntil="5:46" />
+            </vm:StopViewModel.RouteStops>
+        </vm:StopViewModel>
+        <vm:StopViewModel StopID="1" Distance="1.3" Name="Broad at Caudill" />
+    </vm:MainViewModel.Stops>
+
+</vm:MainViewModel>
